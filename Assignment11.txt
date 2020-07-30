@@ -1,0 +1,8 @@
+Assignment11
+
+1.Ans.  select onum "ALL ORDERS",cnum from orders where cnum=(select cnum from customers where cname='cisneros');
+
+
+2.Ans.  select cname , rating from customers where cnum in (select cnum from orders where amt > (select avg(amt) from orders));
+
+3.Ans.  select sum(amt) from orders group by snum having sum(amt) > (select max(amt) from orders);

@@ -1,0 +1,17 @@
+Assignment14
+
+1.write a command tat puts the following values in their given order,into the salespeople table: city-san jose.name-blanco,comm-NULL,cnum-1100.
+ 
+Ans. Query:  insert into salespeople (city,sname ,comm,snum)values('san jose','blanco',null,1100);
+
+2.write a command that removes all orders from customers clemens from the orders table;
+
+Ans. Query:delete from orders where cnum in (select cnum from customers where cname='clemens');
+
+3.write a command that increases the rating of all customers in rome by 100.
+
+ Ans. Query : update customers set rating = rating + 100;
+
+4.salesperson serres has left the company. Assign her customers to Motika.
+
+Ans. Query : update customers set snum=(select snum from salespeople where sname='serres')where snum=(select snum from salespeople where sname='motika');

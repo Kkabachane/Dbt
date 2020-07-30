@@ -1,0 +1,9 @@
+Assignment 2
+
+
+1. Cnum is the primary key.
+
+2.Rating is the 4th column of customer table.
+
+3.For Row--> Tuple ,Entity
+  For column-->Attribute,Method.

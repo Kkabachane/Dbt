@@ -1,0 +1,18 @@
+Assignment16
+
+1.Write a command that will enable  a user to pull orders grouped by date  out of the orders table quickly.
+
+Ans. Query :  create index d_order on orders(Odate);
+
+2.If the orders table has already been created,how can you force the onum field to be unique(assume all current values are unique).
+
+Ans. Query : alter table orders modify onum int (4) primary key;
+
+3.Create an index that would permit each salesperson  to retieve his or her orders grouped by date quickly.
+
+Ans. Query : create index I_date on orders(Odate);
+
+4.Let us assume that each salesperson is to have only one customer of a given rating and that this is currently the cas.Enter a command that enforces t.
+
+Ans. Query : alter table customers modify rating int(4) primary key;
+

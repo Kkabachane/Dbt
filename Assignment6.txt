@@ -1,0 +1,16 @@
+Assignment6
+
+1.Ans. Query:select * from orders 
+ 	 where Odate in ('1990-10-03','1990-10-04');
+  
+  	Query:select * from orders where odate ='1990-10-03' or odate='1990-10-04';
+
+2.Ans. Query:select cname,sname from customers,salespeople where customers.snum=salespeople.snum having sname='Peel' or sname='Motika';
+
+3.Ans. Query: select * from customers where Cname > 'A' and Cname <'G';
+
+4.Ans. Query: select  * from customers where Cname like 'C%';
+
+5.Ans. Query: select * from orders where amt NOT in ('zero','NULL');
+
+  	Query: select * from orders where amt is not null;

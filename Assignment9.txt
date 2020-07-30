@@ -1,0 +1,9 @@
+Assignment9
+
+1.Ans.  :  select Onum,Cname from orders,customers where customers.snum=orders.snum;
+
+2.Ans.  : select sname,cname,onum from orders,customers,salespeople where salespeople.snum=customers.snum and customers.snum=orders.snum;
+
+3.Ans.:  select cname,sname,comm* 100 "RATE OF COMMISSION" from customers,salespeople where salespeople.snum=customers.snum and comm >.12;
+
+4.Ans.  : select amt,comm from salespeople join customers using (snum) join orders using (snum) where rating > 100;

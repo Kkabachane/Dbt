@@ -1,0 +1,28 @@
+Assignment20
+
+1.which of these views are updatable (will allow DML operations)?
+
+1.Create View Dailyorders
+  as Select Distinct cnum,snum,onum,odate from orders;
+
+Ans. Yes.
+
+2.create view custotals as select cname,sum(amt)sum_amt from orders,customerswhere orders.cnum=customers.cnum group by cname;
+
+Ans. No.
+
+3. create view thirdorders as select * from dailyorders where odate ='1990-10-03';
+
+Ans. Yes.
+
+4.create view nullcities as select snum,sname,city from salespeople where city is NULL OR sname BETWEEN 'A' and 'MZ';
+
+Ans.Yes.
+
+2.create a view of the salespeople table called commission.This view will include only the snum and comm fields.Through this view,someone could
+ enter or change commission,but only to values between .10 and .20.
+
+Ans. create view  commission1 as select snum,comm from salespeople where comm between .10 and .20;
+	insert into commission1 values(2000,.8);
+	 select * from commission1;
+	 select * from salespeople;

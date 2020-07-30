@@ -1,0 +1,12 @@
+Assignment18
+
+1 Ans. create table cityorders1 select onum,amt,snum ,city,cnum from orders natural join customers;
+
+	alter table cityorders1 add constraint onum_fk foreign key(onum) references orders(onum);
+	
+	desc cityorders1;
+
+2.Ans. alter table cityorders1 add foreign key(cnum) references customers(cnum);
+	
+	alter table  copy_orders add foreign key(prev) references copy_orders(onum);
+

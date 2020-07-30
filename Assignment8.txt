@@ -1,0 +1,9 @@
+Assignment8
+
+1.Ans.  :  select onum,snum,amt,(amt*12)/100 comm from orders;
+
+2.Ans.  : select onum,snum,amt,(amt*12)/100 comm from orders;
+
+3.Ans. : select rating, cname ,snum from customers order by rating desc;
+
+4.Ans. : select onum,count(odate) totals from orders order by odate desc;

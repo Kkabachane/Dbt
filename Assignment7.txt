@@ -1,0 +1,13 @@
+Assignment7
+
+1.Ans.  Query : select count(*) from orders where odate='1990-10-03';
+
+2Ans. .Query :  select count(city) from customers where city is not null;
+
+3.Ans. Query: select amt as 'smallest order' from orders group by cnum;
+
+4.Ans. Query : select * from customers where cname like 'G%';
+
+5.Ans. Query : select max(rating) from customers;
+
+6.Ans. Query : select count(odate) from orders group by odate;

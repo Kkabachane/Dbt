@@ -1,0 +1,9 @@
+Assignment3
+
+1. Does ANSI recognize the data type DATE?
+
+Ans : Yes, ANSI recognize date data type. Default date format is 'YYYY-MM-DD'.
+
+2.Which subdivision of SQL is used to put values in tables?
+
+Ans :The INSERT statement is used to add new rows of data to a table.
